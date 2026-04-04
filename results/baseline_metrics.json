@@ -1,0 +1,20 @@
+{
+  "model_type": "baseline",
+  "factorized_layers": [
+    4,
+    5
+  ],
+  "rank": 64,
+  "num_experts": 4,
+  "top_k": 1,
+  "trainable_params": 66955010,
+  "best_val_accuracy": 0.9071100917431193,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.07616499999513937,
+      "val_accuracy": 0.9071100917431193,
+      "val_loss": 0.36874956972555284
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "run_name": "lowrank_r32_layers5",
+  "model_type": "lowrank",
+  "factorized_layers": [
+    5
+  ],
+  "rank": 32,
+  "num_experts": 4,
+  "top_k": 1,
+  "use_distillation": false,
+  "temperature": 2.0,
+  "alpha": 0.5,
+  "beta": 0.5,
+  "trainable_params": 64715522,
+  "best_val_accuracy": 0.908256880733945,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0731744664274817,
+      "train_ce_loss": 0.0731744664274817,
+      "train_kd_loss": 0.0,
+      "val_accuracy": 0.908256880733945,
+      "val_loss": 0.37618075803332374
+    }
+  ]
+}

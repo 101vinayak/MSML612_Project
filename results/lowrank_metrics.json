@@ -1,0 +1,20 @@
+{
+  "model_type": "lowrank",
+  "factorized_layers": [
+    4,
+    5
+  ],
+  "rank": 32,
+  "num_experts": 4,
+  "top_k": 1,
+  "trainable_params": 62476034,
+  "best_val_accuracy": 0.9094036697247706,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0771720423074323,
+      "val_accuracy": 0.9094036697247706,
+      "val_loss": 0.3839778404409459
+    }
+  ]
+}

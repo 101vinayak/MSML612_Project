@@ -1,0 +1,27 @@
+{
+  "run_name": "lowrank_kd",
+  "model_type": "lowrank",
+  "factorized_layers": [
+    4,
+    5
+  ],
+  "rank": 32,
+  "num_experts": 4,
+  "top_k": 1,
+  "use_distillation": true,
+  "temperature": 2.0,
+  "alpha": 0.5,
+  "beta": 0.5,
+  "trainable_params": 62476034,
+  "best_val_accuracy": 0.8979357798165137,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.06311921511979712,
+      "train_ce_loss": 0.070672442909957,
+      "train_kd_loss": 0.055565987456442825,
+      "val_accuracy": 0.8979357798165137,
+      "val_loss": 0.4341376412728237
+    }
+  ]
+}

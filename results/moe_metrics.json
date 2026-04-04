@@ -1,0 +1,20 @@
+{
+  "model_type": "moe",
+  "factorized_layers": [
+    4,
+    5
+  ],
+  "rank": 16,
+  "num_experts": 4,
+  "top_k": 1,
+  "trainable_params": 62727946,
+  "best_val_accuracy": 0.9025229357798165,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.09710452833634152,
+      "val_accuracy": 0.9025229357798165,
+      "val_loss": 0.4463357596568456
+    }
+  ]
+}
