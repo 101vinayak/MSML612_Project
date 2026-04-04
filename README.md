@@ -1,7 +1,5 @@
 # Low-Rank MoE DistilBERT for SST-2
 
-Minimal, reproducible course-project repo for compressing DistilBERT feed-forward layers using low-rank factorization and mixture-of-experts routing on SST-2.
-
 ## Repo layout
 
 - `src/data.py` - dataset loading and tokenization
@@ -10,7 +8,7 @@ Minimal, reproducible course-project repo for compressing DistilBERT feed-forwar
 - `train.py` - train baseline / low-rank / MoE student, with optional distillation
 - `eval.py` - evaluate checkpoints and print metrics
 
-## Quick start (Colab)
+## Quick start
 
 ```bash
 pip install -r requirements.txt
