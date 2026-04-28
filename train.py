@@ -41,13 +41,16 @@ def kd_loss(student_logits, teacher_logits, temperature: float = 2.0) -> torch.T
 
 
 def get_run_name(args) -> str:
+    if args.model_type == "baseline":
+        return "baseline"
+
     layer_str = "-".join(map(str, args.factorized_layers))
     name = f"{args.model_type}_r{args.rank}_layers{layer_str}"
 
     if args.model_type == "moe":
         name += f"_e{args.num_experts}_k{args.top_k}"
 
-    if args.use_distillation and args.model_type != "baseline":
+    if args.use_distillation:
         name += "_kd"
 
     return name

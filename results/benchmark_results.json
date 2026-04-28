@@ -1,0 +1,90 @@
+[
+  {
+    "name": "baseline",
+    "model_type": "baseline",
+    "factorized_layers": [
+      4,
+      5
+    ],
+    "rank": 64,
+    "num_experts": 4,
+    "top_k": 1,
+    "checkpoint": "checkpoints/baseline_best.pt",
+    "checkpoint_loaded": true,
+    "trainable_params": 66955010,
+    "params_m": 66.95501,
+    "accuracy": 0.9036697247706422,
+    "loss": 0.44019218903342516,
+    "avg_ms_per_batch": 37.72874660867471,
+    "avg_ms_per_sample": 1.2187656910105595,
+    "samples_per_second": 820.5022568126558,
+    "measured_batches": 23,
+    "measured_samples": 712
+  },
+  {
+    "name": "lowrank_r32_layers4-5",
+    "model_type": "lowrank",
+    "factorized_layers": [
+      4,
+      5
+    ],
+    "rank": 32,
+    "num_experts": 4,
+    "top_k": 1,
+    "checkpoint": "checkpoints/lowrank_r32_layers4-5_best.pt",
+    "checkpoint_loaded": true,
+    "trainable_params": 62476034,
+    "params_m": 62.476034,
+    "accuracy": 0.9094036697247706,
+    "loss": 0.4348602214776868,
+    "avg_ms_per_batch": 34.35403286960576,
+    "avg_ms_per_sample": 1.1097510617990625,
+    "samples_per_second": 901.1029900515342,
+    "measured_batches": 23,
+    "measured_samples": 712
+  },
+  {
+    "name": "moe_r16_layers4-5_e4_k1",
+    "model_type": "moe",
+    "factorized_layers": [
+      4,
+      5
+    ],
+    "rank": 16,
+    "num_experts": 4,
+    "top_k": 1,
+    "checkpoint": "checkpoints/moe_r16_layers4-5_e4_k1_best.pt",
+    "checkpoint_loaded": true,
+    "trainable_params": 62727946,
+    "params_m": 62.727946,
+    "accuracy": 0.9048165137614679,
+    "loss": 0.49553921572658993,
+    "avg_ms_per_batch": 39.44914852178519,
+    "avg_ms_per_sample": 1.2743404719116003,
+    "samples_per_second": 784.7196428595961,
+    "measured_batches": 23,
+    "measured_samples": 712
+  },
+  {
+    "name": "moe_r16_layers4-5_e4_k1_kd",
+    "model_type": "moe",
+    "factorized_layers": [
+      4,
+      5
+    ],
+    "rank": 16,
+    "num_experts": 4,
+    "top_k": 1,
+    "checkpoint": "checkpoints/moe_r16_layers4-5_e4_k1_kd_best.pt",
+    "checkpoint_loaded": true,
+    "trainable_params": 62727946,
+    "params_m": 62.727946,
+    "accuracy": 0.9105504587155964,
+    "loss": 0.44755584336475496,
+    "avg_ms_per_batch": 39.46958508696179,
+    "avg_ms_per_sample": 1.275000641854103,
+    "samples_per_second": 784.3133306551143,
+    "measured_batches": 23,
+    "measured_samples": 712
+  }
+]

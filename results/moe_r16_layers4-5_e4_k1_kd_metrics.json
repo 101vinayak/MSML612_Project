@@ -1,0 +1,43 @@
+{
+  "run_name": "moe_r16_layers4-5_e4_k1_kd",
+  "model_type": "moe",
+  "factorized_layers": [
+    4,
+    5
+  ],
+  "rank": 16,
+  "num_experts": 4,
+  "top_k": 1,
+  "use_distillation": true,
+  "temperature": 2.0,
+  "alpha": 0.8,
+  "beta": 0.2,
+  "trainable_params": 62727946,
+  "best_val_accuracy": 0.9105504587155964,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.09217605802821027,
+      "train_ce_loss": 0.09169244058456917,
+      "train_kd_loss": 0.09411051937206152,
+      "val_accuracy": 0.8944954128440367,
+      "val_loss": 0.5198544303303447
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0753782743733699,
+      "train_ce_loss": 0.0745698293779618,
+      "train_kd_loss": 0.07861204788377299,
+      "val_accuracy": 0.9105504587155964,
+      "val_loss": 0.44755583192828463
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04702821548470543,
+      "train_ce_loss": 0.048286086833890594,
+      "train_kd_loss": 0.04199672630434235,
+      "val_accuracy": 0.9094036697247706,
+      "val_loss": 0.44339357471251606
+    }
+  ]
+}

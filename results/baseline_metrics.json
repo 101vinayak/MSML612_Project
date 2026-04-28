@@ -1,4 +1,5 @@
 {
+  "run_name": "baseline",
   "model_type": "baseline",
   "factorized_layers": [
     4,
@@ -7,14 +8,36 @@
   "rank": 64,
   "num_experts": 4,
   "top_k": 1,
+  "use_distillation": false,
+  "temperature": 2.0,
+  "alpha": 0.5,
+  "beta": 0.5,
   "trainable_params": 66955010,
-  "best_val_accuracy": 0.9071100917431193,
+  "best_val_accuracy": 0.9036697247706422,
   "history": [
     {
       "epoch": 1,
-      "train_loss": 0.07616499999513937,
-      "val_accuracy": 0.9071100917431193,
-      "val_loss": 0.36874956972555284
+      "train_loss": 0.0810033170977066,
+      "train_ce_loss": 0.0810033170977066,
+      "train_kd_loss": 0.0,
+      "val_accuracy": 0.9013761467889908,
+      "val_loss": 0.33566299586667925
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05847389180891173,
+      "train_ce_loss": 0.05847389180891173,
+      "train_kd_loss": 0.0,
+      "val_accuracy": 0.9036697247706422,
+      "val_loss": 0.44019218903342516
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.03369943904246196,
+      "train_ce_loss": 0.03369943904246196,
+      "train_kd_loss": 0.0,
+      "val_accuracy": 0.9036697247706422,
+      "val_loss": 0.5208479190638305
     }
   ]
 }
